@@ -17,8 +17,11 @@ import { ToastModule } from 'primeng/toast';
 import { HomePageComponent } from './home-page/home-page.component';
 import { GalleriaModule } from 'primeng/galleria';
 import { PrimeNGConfig } from 'primeng/api';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ServiceComponent } from './service/service.component';
+import { WhatNewComponent } from './what-new/what-new.component';
 @NgModule({
-  declarations: [AppComponent, HomePageComponent],
+  declarations: [AppComponent, HomePageComponent, AboutUsComponent, ServiceComponent, WhatNewComponent],
   imports: [
     ToastModule,
     DialogModule,
