@@ -1,21 +1,31 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
 }
 
-.main-header {
-  background-color: transparent;
-  color: rgb(221, 51, 51);
-  padding: 10px;
-  padding-right: 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.carousel-image {
   width: 100%;
-  position: fixed;
-  z-index: 1;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 100;
+}
+.custom-toggler {
+  background-color: black;
+  border-color: black;
+}
+.carousel-buttons {
+  position: absolute;
+  bottom: 5%;
+  left: 20px;
+  transform: translateY(-50%);
 }
 
+.btn-read-more,
+.btn-contact {
+  margin-bottom: 10px;
+}
 .logo-container {
   flex: 1;
   display: flex;
@@ -26,23 +36,18 @@ body {
   max-height: 100px;
   max-width: 100%;
 }
-
+#carouselExampleIndicators {
+  margin-left: -9%;
+  margin-right: -9%;
+}
+#myCarousel {
+  margin-left: 9%;
+  margin-right: 9%;
+}
 nav {
   display: flex;
   align-items: center;
 }
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
 button {
   background-color: #d96a1a;
   color: white;
@@ -54,92 +59,4 @@ button {
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #953f0b;
-}
-
-.carousel-item {
-  height: 100vh;
-}
-
-.carousel-inner img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-}
-#carouselExampleControls {
-  margin-left: -9%;
-  margin-right: -9%;
-}
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: black;
-}
-.carousel-caption h1 {
-  font-size: 6rem;
-  background: linear-gradient(to bottom, #d96a1a 60%, black 40%);
-  -webkit-background-clip: text;
-  color: transparent;
-  text-align: center;
-}
-.carousel-caption p {
-  font-size: 3rem;
-  margin: 0;
-}
-.bottom-buttons {
-  position: absolute;
-  bottom: 20px;
-  /* left: 0; */
-  transform: translateX(0%);
-  z-index: 1;
-  display: flex;
-  flex-direction: row;
-}
-
-.bottom-buttons button {
-  margin: 5px;
-  margin-right: 10px;
-}
-.about-page {
-  position: relative;
-}
-
-.about-page img {
-  width: 55%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.about-us-section h2 {
-  font-size: 4rem;
-  background: linear-gradient(to bottom, #d96a1a 60%, black 40%);
-  -webkit-background-clip: text;
-  color: transparent;
-  text-align: left;
-}
-.about-us-section {
-  margin: 0;
-  height: 700px;
-}
-.card-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card-1 {
-  margin-top: -40px;
 }
