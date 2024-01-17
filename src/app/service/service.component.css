@@ -122,3 +122,11 @@ nav {
   padding: 2px;
   font-size: 30px;
 }
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
