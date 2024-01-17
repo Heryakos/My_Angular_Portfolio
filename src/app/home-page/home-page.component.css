@@ -11,10 +11,7 @@ body {
   object-fit: cover;
   z-index: 100;
 }
-.custom-toggler {
-  background-color: black;
-  border-color: black;
-}
+
 .carousel-buttons {
   position: absolute;
   bottom: 5%;
@@ -36,19 +33,11 @@ body {
   max-height: 100px;
   max-width: 100%;
 }
-#carouselExampleIndicators {
-  margin-left: -9%;
-  margin-right: -9%;
-}
-#myCarousel {
-  margin-left: 9%;
-  margin-right: 9%;
-}
 nav {
   display: flex;
   align-items: center;
 }
-button {
+.curve {
   background-color: #d96a1a;
   color: white;
   border-top-left-radius: 45px;
@@ -59,4 +48,15 @@ button {
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease;
+}
+.carousel-title {
+  font-size: 6rem;
+  background: linear-gradient(to bottom, #d96a1a 60%, black 40%);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+.social-icon i {
+  padding: 2px;
+  font-size: 30px;
 }

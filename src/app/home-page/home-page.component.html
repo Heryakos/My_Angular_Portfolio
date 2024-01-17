@@ -7,8 +7,6 @@
     <div class="container">
       <span class="navbar-text" style="color: white">
         <i class="fas fa-envelope"></i> info@oftana
-      </span>
-      <span class="navbar-text" style="color: white">
         <i class="fas fa-phone"></i> +251-911634274
       </span>
     </div>
@@ -20,9 +18,9 @@
     class="navbar navbar-expand-lg bg-body fixed-top"
     style="padding-top: 50px"
   >
-    <div class="container-fluid">
+    <div class="container-fluid d-lg-none">
       <button
-        class="navbar-toggler custom-toggler"
+        class="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarExample"
@@ -32,33 +30,80 @@
       >
         <i class="fas fa-bars"></i>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarExample">
+        <!-- Content for small screens -->
         <nav class="left-nav" style="display: flex; align-items: center">
           <ul style="list-style: none; margin: 0; padding: 0; display: flex">
             <li style="margin-right: 20px">
-              <button type="button">Home</button>
+              <a routerLink="/home">
+                <a class="sidenav-link">Home</a>
+              </a>
             </li>
             <li style="margin-right: 20px">
-              <button type="button">About</button>
+              <a routerLink="/about">
+                <a class="sidenav-link">About</a>
+              </a>
             </li>
           </ul>
-        </nav>
 
-        <div class="logo-container">
-          <img src="../../assets/logo.png" alt="Logo" class="logo-image" />
-        </div>
+          <div class="logo-container">
+            <img src="../../assets/logo.png" alt="Logo" class="logo-image" />
+          </div>
 
-        <nav class="right-nav" style="display: flex; align-items: center">
           <ul style="list-style: none; margin: 0; padding: 0; display: flex">
             <li style="margin-right: 20px">
-              <button type="button">Service</button>
+              <a routerLink="/services">
+                <a class="sidenav-link">Service</a>
+              </a>
             </li>
             <li style="margin-right: 20px">
-              <button type="button">What's New</button>
+              <a routerLink="/whatNew">
+                <a class="sidenav-link">What's New</a>
+              </a>
             </li>
           </ul>
         </nav>
       </div>
+    </div>
+
+    <!-- Content for larger screens -->
+    <div class="collapse navbar-collapse d-none d-lg-block" id="navbarExample">
+      <nav class="left-nav" style="display: flex; align-items: center">
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex">
+          <li style="margin-right: 20px">
+            <a routerLink="/home">
+              <button type="button" class="curve">Home</button></a
+            >
+          </li>
+          <li style="margin-right: 20px">
+            <a routerLink="/about">
+              <button type="button" class="curve">About</button></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="logo-container">
+        <a routerLink="/home">
+          <img src="../../assets/logo.png" alt="Logo" class="logo-image" />
+        </a>
+      </div>
+
+      <nav class="right-nav" style="display: flex; align-items: center">
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex">
+          <li style="margin-right: 20px">
+            <a routerLink="/services">
+              <button type="button" class="curve">Service</button></a
+            >
+          </li>
+          <li style="margin-right: 20px">
+            <a routerLink="/whatNew">
+              <button type="button" class="curve">What's New</button></a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
   </nav>
   <!-- Navbar -->
@@ -66,73 +111,105 @@
   <!-- Carousel wrapper -->
   <div class="card bg-body">
     <div class="card-body p-0">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
         <ol class="carousel-indicators">
-      <li
-        data-target="#carouselExampleIndicators"
-        data-slide-to="0"
-        class="active"
-      ></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          class="d-block w-100 carousel-image"
-          src="../../assets/immo-wegmann-REqK8jIAtv8-unsplash.jpg"
-          alt="First slide"
-        />
-      </div>
-      <div class="carousel-item">
-        <img
-          class="d-block w-100 carousel-image"
-          src="../../assets/maddi-bazzocco-UhrHTmVBzzE-unsplash.jpg"
-          alt="Second slide"
-        />
-      </div>
-      <div class="carousel-item">
-        <img
-          class="d-block w-100 carousel-image"
-          src="../../assets/alex-padurariu-mqyMjCTWJyQ-unsplash.jpg"
-          alt="Third slide"
-        />
-      </div>
-      <div class="carousel-item">
-        <img
-          class="d-block w-100 carousel-image"
-          src="../../assets/ann_integra-cIQfJ35WgJA-unsplash.jpg"
-          alt="Fourth slide"
-        />
-      </div>
-      <div class="carousel-item">
-        <img
-          class="d-block w-100 carousel-image"
-          src="../../assets/fresh_green_tea_leaves_sunlight_wallpaper_7806fc0aff0cc7094ee0e9622259dba0.jpg"
-          alt="Fifth slide"
-        />
-      </div>
-      <div class="carousel-item">
-        <img
-          class="d-block w-100 carousel-image"
-          src="../../assets/sven-d-a4S6KUuLeoM-unsplash.jpg"
-          alt="Sixth slide"
-        />
-      </div>
-      <div class="carousel-item">
-        <img
-          class="d-block w-100 carousel-image"
-          src="../../assets/chad-kirchoff-xe-e69j6-Ds-unsplash.jpg"
-          alt="Seventh slide"
-        />
-      </div>
-    </div>
-    <!-- Buttons -->
-    <div class="carousel-buttons">
-      <button type="button">Read More</button>
-      <button type="button">Contact</button>
-    </div>
-    <!-- <a
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <h1 class="display-2 carousel-title"><b>OFTANA</b></h1>
+              <p class="display-4">BUSINESS TRADING</p>
+            </div>
+            <img
+              class="d-block w-100 carousel-image"
+              src="../../assets/immo-wegmann-REqK8jIAtv8-unsplash.jpg"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h1 class="display-2 carousel-title"><b>OFTANA</b></h1>
+              <p class="display-4">BUSINESS TRADING</p>
+            </div>
+            <img
+              class="d-block w-100 carousel-image"
+              src="../../assets/maddi-bazzocco-UhrHTmVBzzE-unsplash.jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h1 class="display-2 carousel-title"><b>OFTANA</b></h1>
+              <p class="display-4">BUSINESS TRADING</p>
+            </div>
+            <img
+              class="d-block w-100 carousel-image"
+              src="../../assets/alex-padurariu-mqyMjCTWJyQ-unsplash.jpg"
+              alt="Third slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h1 class="display-2 carousel-title"><b>OFTANA</b></h1>
+              <p class="display-4">BUSINESS TRADING</p>
+            </div>
+            <img
+              class="d-block w-100 carousel-image"
+              src="../../assets/ann_integra-cIQfJ35WgJA-unsplash.jpg"
+              alt="Fourth slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h1 class="display-2 carousel-title"><b>OFTANA</b></h1>
+              <p class="display-4">BUSINESS TRADING</p>
+            </div>
+            <img
+              class="d-block w-100 carousel-image"
+              src="../../assets/fresh_green_tea_leaves_sunlight_wallpaper_7806fc0aff0cc7094ee0e9622259dba0.jpg"
+              alt="Fifth slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h1 class="display-2 carousel-title"><b>OFTANA</b></h1>
+              <p class="display-4">BUSINESS TRADING</p>
+            </div>
+            <img
+              class="d-block w-100 carousel-image"
+              src="../../assets/sven-d-a4S6KUuLeoM-unsplash.jpg"
+              alt="Sixth slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h1 class="display-2 carousel-title"><b>OFTANA</b></h1>
+              <p class="display-4">BUSINESS TRADING</p>
+            </div>
+            <img
+              class="d-block w-100 carousel-image"
+              src="../../assets/chad-kirchoff-xe-e69j6-Ds-unsplash.jpg"
+              alt="Seventh slide"
+            />
+          </div>
+        </div>
+        <!-- Buttons -->
+        <div class="carousel-buttons">
+          <button type="button" class="curve">Read More</button>
+          <button type="button" class="curve">Contact</button>
+        </div>
+        <!-- <a
       class="carousel-control-prev"
       href="#carouselExampleIndicators"
       role="button"
@@ -150,7 +227,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a> -->
-  </div>
+      </div>
     </div>
   </div>
   <!-- Carousel wrapper -->
@@ -183,11 +260,14 @@
             <img src="../../assets/logo.png" class="card-img-top" alt="Image" />
           </div>
         </div>
-        <div class="carousel-buttons">
-          <button type="button">Read More</button>
-          <button type="button">Contact</button>
-        </div>
       </div>
+    </div>
+    <!-- Buttons -->
+    <div class="card-footer">
+      <small class="text-muted">
+        <button type="button" class="curve">Read More</button>
+        <button type="button" class="curve">Contact</button></small
+      >
     </div>
   </div>
 </div>
@@ -213,7 +293,7 @@
       </div>
       <div class="card-footer">
         <small class="text-muted">
-          <button type="button">View More</button></small
+          <button type="button" class="curve">View More</button></small
         >
       </div>
     </div>
@@ -239,7 +319,7 @@
       </div>
       <div class="card-footer">
         <small class="text-muted">
-          <button type="button">View More</button></small
+          <button type="button" class="curve">View More</button></small
         >
       </div>
     </div>
@@ -265,7 +345,7 @@
       </div>
       <div class="card-footer">
         <small class="text-muted">
-          <button type="button">View More</button></small
+          <button type="button" class="curve">View More</button></small
         >
       </div>
     </div>
@@ -347,11 +427,10 @@
           </div>
           <div class="card-footer">
             <small class="text-muted">
-              <button type="button">View More</button></small
+              <button type="button" class="curve">View More</button></small
             >
           </div>
         </div>
-      
       </div>
     </div>
   </div>
@@ -525,23 +604,23 @@
     <section
       class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
     >
-      <div>
-        <a href="" class="me-4 text-reset">
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <a href="" class="me-4 text-reset social-icon">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset social-icon">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset social-icon">
           <i class="fab fa-google"></i>
         </a>
-        <a href="" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset social-icon">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset social-icon">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset social-icon">
           <i class="fab fa-github"></i>
         </a>
       </div>

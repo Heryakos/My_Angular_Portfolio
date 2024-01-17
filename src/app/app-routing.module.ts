@@ -6,16 +6,16 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ServiceComponent } from './service/service.component';
 import { WhatNewComponent } from './what-new/what-new.component';
 
-const routes: Routes = [ 
+const routes: Routes = [
   { path: '', component: HomePageComponent },
-{ path: 'about', component: AboutUsComponent },
-{ path: 'services', component: ServiceComponent },
-{ path: 'whatNew', component: WhatNewComponent }
+  { path: 'home', component: HomePageComponent },
+  { path: 'about', component: AboutUsComponent },
+  { path: 'services', component: ServiceComponent },
+  { path: 'whatNew', component: WhatNewComponent },
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
