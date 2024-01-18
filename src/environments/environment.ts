@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  rootpathh: window["rootpathh" as any],
-  rootpath6:window['rootpath6' as any],
+  username: window['username' as any],
+  rootpath: window['rootpath' as any],
 };
 /*
  * For easier debugging in development mode, you can import the following file
