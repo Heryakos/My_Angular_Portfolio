@@ -1,0 +1,75 @@
+<nav class="navbar fixed-top" [ngClass]="{ hidden: isScrolled }">
+  <div class="navbar-container">
+    <img
+      src="../../assets/square-hm-logo-design-vector-isolated-white-background-286936945.jpg"
+      alt="Logo"
+      class="logo-image"
+    />
+    <div class="hamburger" [class.open]="isMenuOpen" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" [class.open]="isMenuOpen">
+      <li>
+        <a routerLink="/home">
+          <span class="sidenav-link">Home</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/about">
+          <span class="sidenav-link">About</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/services">
+          <span class="sidenav-link">Service</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/contact">
+          <span class="sidenav-link">Contact</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="language-selector">
+      <li style="margin-left: 100vh">
+        <div class="dropdown">
+          <button
+            style="background-color: #0a192f"
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="languageDropdown"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            {{ languageFormControl.value == "en" ? "English" : "አማርኛ" }}
+          </button>
+          <div
+            style="background-color: #010f24"
+            class="dropdown-menu dropdown-menu-right"
+            aria-labelledby="languageDropdown"
+          >
+            <a
+              class="dropdown-item"
+              href="#"
+              (click)="changeLanguage('en')"
+              [ngClass]="{ active: languageFormControl.value == 'en' }"
+            >
+              English
+            </a>
+            <a
+              class="dropdown-item"
+              href="#"
+              (click)="changeLanguage('am')"
+              [ngClass]="{ active: languageFormControl.value == 'am' }"
+            >
+              አማርኛ
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
