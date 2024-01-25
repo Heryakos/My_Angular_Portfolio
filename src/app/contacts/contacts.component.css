@@ -1,0 +1,45 @@
+/* Existing CSS code */
+
+.contact-section {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+  perspective: 1000px; /* Add perspective for 3D animation */
+}
+
+.container {
+  transform-style: preserve-3d; /* Preserve 3D transformations */
+}
+
+.row {
+  transform-style: preserve-3d; /* Preserve 3D transformations */
+}
+
+.col-md-6 {
+  transform-style: preserve-3d; /* Preserve 3D transformations */
+}
+
+.col-md-6:nth-child(1) {
+  animation: animateLeft 1s ease-in-out; /* Apply animation to first column */
+}
+
+.col-md-6:nth-child(2) {
+  animation: animateRight 1s ease-in-out; /* Apply animation to second column */
+}
+
+@keyframes animateLeft {
+  0% {
+    transform: translateX(-100px) rotateY(-90deg); /* Initial position for first column */
+  }
+  100% {
+    transform: translateX(0) rotateY(0deg); /* Final position for first column */
+  }
+}
+
+@keyframes animateRight {
+  0% {
+    transform: translateX(100px) rotateY(90deg); /* Initial position for second column */
+  }
+  100% {
+    transform: translateX(0) rotateY(0deg); /* Final position for second column */
+  }
+}
