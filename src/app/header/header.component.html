@@ -57,6 +57,12 @@
               (click)="changeLanguage('en')"
               [ngClass]="{ active: languageFormControl.value == 'en' }"
             >
+              <img
+                width="20px"
+                src="https://www.worldometers.info/img/flags/us-flag.gif"
+                alt="English Flag"
+                class="language-flag"
+              />
               English
             </a>
             <a
@@ -65,6 +71,12 @@
               (click)="changeLanguage('am')"
               [ngClass]="{ active: languageFormControl.value == 'am' }"
             >
+              <img
+                width="20px"
+                src="https://www.worldometers.info/img/flags/et-flag.gif"
+                alt="Amharic Flag"
+                class="language-flag"
+              />
               አማርኛ
             </a>
           </div>
