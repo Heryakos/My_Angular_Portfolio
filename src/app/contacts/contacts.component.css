@@ -1,45 +1,66 @@
-/* Existing CSS code */
-
+/* Body of contact css*/
 .contact-section {
   padding: 80px 0;
   background-color: #f8f8f8;
-  perspective: 1000px; /* Add perspective for 3D animation */
+  transition: transform 0.5s ease-in-out;
 }
 
-.container {
-  transform-style: preserve-3d; /* Preserve 3D transformations */
+.closed {
+  transform: translateY(-50%);
 }
 
-.row {
-  transform-style: preserve-3d; /* Preserve 3D transformations */
+.open {
+  transform: translateY(0);
 }
 
-.col-md-6 {
-  transform-style: preserve-3d; /* Preserve 3D transformations */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.col-md-6:nth-child(1) {
-  animation: animateLeft 1s ease-in-out; /* Apply animation to first column */
+.section-description {
+  font-size: 16px;
+  margin-bottom: 40px;
 }
 
-.col-md-6:nth-child(2) {
-  animation: animateRight 1s ease-in-out; /* Apply animation to second column */
+.form-control {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 
-@keyframes animateLeft {
-  0% {
-    transform: translateX(-100px) rotateY(-90deg); /* Initial position for first column */
-  }
-  100% {
-    transform: translateX(0) rotateY(0deg); /* Final position for first column */
-  }
+textarea.form-control {
+  height: auto;
+  resize: vertical;
 }
 
-@keyframes animateRight {
-  0% {
-    transform: translateX(100px) rotateY(90deg); /* Initial position for second column */
-  }
-  100% {
-    transform: translateX(0) rotateY(0deg); /* Final position for second column */
-  }
+.btn-primary {
+  background-color: #0c3470;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0a192f;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.fa {
+  margin-right: 10px;
 }

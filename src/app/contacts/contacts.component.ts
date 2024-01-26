@@ -1,5 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-contacts',
@@ -7,28 +6,27 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./contacts.component.css'],
 })
 export class ContactsComponent implements OnInit {
-  languageFormControl = new FormControl('en');
-
-  changeLanguage(language: string) {
-    this.languageFormControl.setValue(language);
-  }
-  isMenuOpen = false;
-
-  isScrolled = false;
-  lastScrollTop = 0;
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const st = window.pageYOffset || document.documentElement.scrollTop;
-    this.isScrolled = st > this.lastScrollTop && st > 0;
-    this.lastScrollTop = st;
-  }
-
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
-
   constructor() {}
 
   ngOnInit(): void {}
+  isScrollingUp = false;
+  isScrollingDown = false;
+  lastScrollTop = 0;
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > this.lastScrollTop) {
+      // Scrolling down
+      this.isScrollingUp = true;
+      this.isScrollingDown = false;
+    } else {
+      // Scrolling up
+      this.isScrollingUp = false;
+      this.isScrollingDown = true;
+    }
+
+    this.lastScrollTop = scrollTop;
+  }
 }
