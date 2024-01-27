@@ -1,70 +1,46 @@
-body {
-  margin: 0;
-  padding: 0;
+.About {
+  margin-top: 5%;
+}
+.underline {
+  color: rgb(125, 151, 236);
+}
+.underlinecolor {
+  position: relative;
 }
 
-.carousel-image {
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  z-index: 100;
-}
-
-.carousel-buttons {
+.underlinecolor::after {
+  content: "";
   position: absolute;
-  bottom: 5%;
-  left: 20px;
-  transform: translateY(-50%);
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #00e6e6;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
 }
 
-.btn-read-more,
-.btn-contact {
-  margin-bottom: 10px;
+.underlinecolor:hover::after {
+  transform: scaleX(1);
 }
-.logo-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+.progress-bar {
+  width: 0%;
+}
+.progress-bar-value {
+  width: 0%;
+  transition: width 1s ease-in-out;
 }
 
-.logo-image {
-  max-height: 100px;
-  max-width: 100%;
+.progress-bar-value.animate {
+  animation: progressAnimation 1s ease-in-out;
 }
-nav {
-  display: flex;
-  align-items: center;
-}
-.curve {
-  background-color: #d96a1a;
-  color: white;
-  border-top-left-radius: 45px;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 45px;
-  padding: 10px 40px;
-  cursor: pointer;
-  border: none;
-  transition: background-color 0.3s ease;
-}
-.carousel-title {
-  font-size: 6rem;
-  background: linear-gradient(to bottom, #d96a1a 60%, black 40%);
-  -webkit-background-clip: text;
-  color: transparent;
-  text-align: center;
-}
-.social-icon i {
-  padding: 2px;
-  font-size: 30px;
-}
-.carousel-caption {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }

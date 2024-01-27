@@ -1,272 +1,91 @@
-<header>
-  <!-- Small navbar -->
-  <nav
-    class="navbar navbar-expand-lg navbar-light top-navbar fixed-top"
-    style="background-color: rgb(59, 17, 17)"
-  >
-    <div class="container">
-      <span class="navbar-text" style="color: white">
-        <i class="fas fa-envelope"></i> info@oftana
-        <i class="fas fa-phone"></i> +251-911634274
-      </span>
-    </div>
-  </nav>
-  <!-- Small navbar -->
-  <!-- Navbar -->
-
-  <nav
-    class="navbar navbar-expand-lg bg-body fixed-top"
-    style="padding-top: 50px"
-  >
-    <div class="container-fluid d-lg-none">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarExample"
-        aria-controls="navbarExample"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarExample">
-        <!-- Content for small screens -->
-        <nav class="left-nav" style="display: flex; align-items: center">
-          <ul style="list-style: none; margin: 0; padding: 0; display: flex">
-            <li style="margin-right: 20px">
-              <a routerLink="/home">
-                <a class="sidenav-link">Home</a>
-              </a>
-            </li>
-            <li style="margin-right: 20px">
-              <a routerLink="/about">
-                <a class="sidenav-link">About</a>
-              </a>
-            </li>
-          </ul>
-
-          <div class="logo-container">
-            <img src="../../assets/logo.png" alt="Logo" class="logo-image" />
-          </div>
-
-          <ul style="list-style: none; margin: 0; padding: 0; display: flex">
-            <li style="margin-right: 20px">
-              <a routerLink="/services">
-                <a class="sidenav-link">Service</a>
-              </a>
-            </li>
-            <li style="margin-right: 20px">
-              <a routerLink="/whatNew">
-                <a class="sidenav-link">What's New</a>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-    <!-- Content for larger screens -->
-    <div class="collapse navbar-collapse d-none d-lg-block" id="navbarExample">
-      <nav class="left-nav" style="display: flex; align-items: center">
-        <ul style="list-style: none; margin: 0; padding: 0; display: flex">
-          <li style="margin-right: 20px">
-            <a routerLink="/home">
-              <button type="button" class="curve">Home</button></a
-            >
-          </li>
-          <li style="margin-right: 20px">
-            <a routerLink="/about">
-              <button type="button" class="curve">About</button></a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <div class="logo-container">
-        <a routerLink="/home">
-          <img src="../../assets/logo.png" alt="Logo" class="logo-image" />
-        </a>
-      </div>
-      <nav class="right-nav" style="display: flex; align-items: center">
-        <ul style="list-style: none; margin: 0; padding: 0; display: flex">
-          <li style="margin-right: 20px">
-            <a routerLink="/services">
-              <button type="button" class="curve">Service</button></a
-            >
-          </li>
-          <li style="margin-right: 20px">
-            <a routerLink="/whatNew">
-              <button type="button" class="curve">What's New</button></a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </nav>
-  <!-- Navbar -->
-  <br />
-  <br />
-  <br />
-  <br />
+<app-header></app-header>
+<section class="About">
   <div class="card">
     <div class="card-body">
       <div class="row">
         <div class="col-md-6">
-          <!-- Card with text and title -->
-          <h1 class="display-2 carousel-title"><b>About Us</b></h1>
-          <h5 class="card-title">Background</h5>
-          <h3>Welcome to Oftana Business Trading PLC</h3>
-          <p class="card-text">
-            Oftana Business Trading is a company specializing in the export of
-            Ethiopia<br />
-            coffee, oily grains, and tea leaves, as well as the import of cars
-            and spare parts.<br />
-            with a strong focus on quality reliability. Oftana Business Trading
-            has established itself as a<br />
-            trusted partner in international trading marketing.
+          <h2 class="display-2 carousel-title"><b>About Me</b></h2>
+          <p class="section-description">
+            <span class="underlinecolor">My Name is Heryakos Meles</span>
+          </p>
+
+          <p>
+            I consider myself a value adder. I resolute to being a key asset of
+            objective teams while seeking value from colleagues to add to my
+            strengths. I love computer science and information technology.
+          </p>
+          <p>
+            I have acquired experience building industry standard, production
+            ready applications from working as a full stack software developer
+            and being a full time technology hobbyist. In my
+            <span class="underline">1 years as a developer</span>, I seek to
+            train every day. I have worked performing continuous integration,
+            and covering backend developer roles with
+            <span class="underline"> SQL</span>. I have led teams having
+            empathy, exercising motivation to partners, and setting plans and
+            goals together.
+          </p>
+          <p>
+            My skills also include implementing system improvements, optimizing
+            sites, standardizing patterns, and suggesting and executing ideas
+            that add value to the project I'm working on.
+          </p>
+          <p>
+            Some of the technologies that I have trained and worked on include
+            (but are not limited to):<span class="underline">
+              HTML, CSS, JavaScript, Typescript, Angular, React, SQL, and
+              Git,</span
+            >.
           </p>
         </div>
         <div class="col-md-6">
-          <!-- Card with image only -->
-          <img src="../../assets/logo.png" class="card-img-top" alt="Image" />
-        </div>
-      </div>
-    </div>
-  </div>
-  <br />
-  <br />
-  <div class="card">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-md-6">
-          <!-- Card with image only -->
-          <img
-            src="../../assets/mission.png"
-            class="card-img-top"
-            alt="Image"
-          />
-        </div>
-        <div class="col-md-6">
-          <!-- Card with text and title -->
-          <!-- <h1 class="display-2 carousel-title"><b>About Us</b></h1> -->
-          <h5 class="card-title">Our Mission</h5>
-          <h3>Welcome to Oftana Business Trading PLC</h3>
-          <p class="card-text">
-            Oftana Business Trading is a company specializing in the export of
-            Ethiopia<br />
-            coffee, oily grains, and tea leaves, as well as the import of cars
-            and spare parts.<br />
-            with a strong focus on quality reliability. Oftana Business Trading
-            has established itself as a<br />
-            trusted partner in international trading marketing.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br />
-  <br />
-  <div class="card">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-md-6">
-          <!-- Card with image only -->
-          <img
-            src="../../assets/mission.png"
-            class="card-img-top"
-            alt="Image"
-          />
-        </div>
-        <div class="col-md-6">
-          <!-- Card with text and title -->
-          <!-- <h1 class="display-2 carousel-title"><b>About Us</b></h1> -->
-          <h5 class="card-title">Our Value</h5>
-          <!-- <h3>Welcome to Oftana Business Trading PLC</h3> -->
-          <ul class="card-text">
-            <li>integrity</li>
-            <li>integrity</li>
-            <li>integrity</li>
-            <li>integrity</li>
-            <li>integrity</li>
-            <li>integrity</li>
-            <li>integrity</li>
-            <li>integrity</li>
-            <li>integrity</li>
-            <li>integrity</li>
+          <ul>
+            <li>
+              HTML -
+              <p-progressBar
+                [value]="progressValues.html"
+                class="progress-bar-value"
+              ></p-progressBar>
+            </li>
+            <li>
+              CSS -
+              <p-progressBar
+                [value]="progressValues.css"
+                class="progress-bar-value"
+              ></p-progressBar>
+            </li>
+            <li>
+              JavaScript -
+              <p-progressBar
+                [value]="progressValues.javascript"
+                class="progress-bar-value"
+              ></p-progressBar>
+            </li>
+            <li>
+              TypeScript -
+              <p-progressBar
+                [value]="progressValues.typescript"
+                class="progress-bar-value"
+              ></p-progressBar>
+            </li>
+            <li>
+              Angular -
+              <p-progressBar
+                [value]="progressValues.angular"
+                class="progress-bar-value"
+              ></p-progressBar>
+            </li>
+            <li>
+              React -
+              <p-progressBar
+                [value]="progressValues.react"
+                class="progress-bar-value"
+              ></p-progressBar>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-</header>
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Loction</h6>
-          <i class="fa-solid fa-location-dot"></i>
-          <p>
-            <a href="#!" class="text-reset"
-              >Sheger city, sebta sub city Mogele woreda, oftana Bldg 1st
-              floor</a
-            >
-          </p>
-        </div>
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">Address</h6>
-          <i class="fa-solid fa-globe"></i>
-          <p>
-            <a href="#!" class="text-reset">www.oftna.et</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">info@oftana.et</a>
-          </p>
-        </div>
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <i class="fa-solid fa-address-book"></i>
-          <p><i class="fas fa-phone me-3"></i> +251-911634274</p>
-        </div>
-      </div>
-    </div>
-    <!-- Section: Social media -->
-    <section
-      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-    >
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-        <a href="" class="me-4 text-reset social-icon">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset social-icon">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset social-icon">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset social-icon">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset social-icon">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-reset social-icon">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </section>
-  </section>
-
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
-    © 2023# Copyright:OFTANA BUSINESS TRADING I POWERED Le Solutions
-    <a href="https://lesolutions.et/"
-      ><span style="font-size: 18pt">ለ</span>solutions</a
-    >
-  </div>
-</footer>
+</section>
+<app-footer></app-footer>
