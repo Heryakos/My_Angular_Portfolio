@@ -4,14 +4,14 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ServiceComponent } from './service/service.component';
-import { WhatNewComponent } from './what-new/what-new.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'home', component: HomePageComponent },
   { path: 'about', component: AboutUsComponent },
   { path: 'services', component: ServiceComponent },
-  { path: 'whatNew', component: WhatNewComponent },
+  { path: 'contact', component: ContactsComponent },
 ];
 
 @NgModule({
