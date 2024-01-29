@@ -19,9 +19,21 @@ import { GalleriaModule } from 'primeng/galleria';
 import { PrimeNGConfig } from 'primeng/api';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ServiceComponent } from './service/service.component';
-import { WhatNewComponent } from './what-new/what-new.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProgressBarModule } from 'primeng/progressbar';
+
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, AboutUsComponent, ServiceComponent, WhatNewComponent],
+  declarations: [
+    AppComponent,
+    HomePageComponent,
+    AboutUsComponent,
+    ServiceComponent,
+    ContactsComponent,
+    HeaderComponent,
+    FooterComponent,
+  ],
   imports: [
     ToastModule,
     DialogModule,
@@ -36,6 +48,7 @@ import { WhatNewComponent } from './what-new/what-new.component';
     CardModule,
     DropdownModule,
     GalleriaModule,
+    ProgressBarModule,
   ],
   providers: [PrimeNGConfig],
   bootstrap: [AppComponent],

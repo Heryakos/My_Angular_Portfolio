@@ -1,4 +1,7 @@
 /* Body of contact css*/
+.container {
+  margin-top: 3%;
+}
 .contact-section {
   padding: 80px 0;
   background-color: #f8f8f8;
