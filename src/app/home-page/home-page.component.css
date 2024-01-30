@@ -1,3 +1,62 @@
 .card {
   margin-top: 5%;
+  padding-left: 4%;
+  justify-content: center;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card.ng-trigger.ng-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.card.ng-leave {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.text {
+  margin-top: 5%;
+}
+
+.cta-buttons {
+  padding: 12px 24px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.underline {
+  color: rgb(10, 112, 172);
+}
+
+.image-overlay {
+  position: relative;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

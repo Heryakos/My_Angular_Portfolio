@@ -1,17 +1,40 @@
 <app-header></app-header>
-<div class="card">
+
+<div class="card" [@fadeIn]="isAnimated ? 'visible' : 'hidden'">
   <div class="card-body">
     <div class="row">
-      <div class="col-md-6">
-        <h1 class="display-2 carousel-title"><b>HOME</b></h1>
-        <h5 class="card-title">Welcome to my Portfolio</h5>
-        <h3>My name is Heryakos Meles</h3>
-        <p class="card-text"></p>
+      <div class="col-md-6 text">
+        <!-- Card with text and title -->
+        <h1>
+          Hi<br />
+          I am <span class="underline">Heryakos</span> <br />Full Stack
+          Developer
+        </h1>
+        <div class="cta-buttons">
+          <button
+            routerLink="/contact"
+            type="button"
+            class="btn btn-info"
+            data-mdb-ripple-init
+          >
+            Contact
+          </button>
+        </div>
       </div>
+
       <div class="col-md-6">
-        <img src="../../assets/" class="card-img-top" alt="Image" />
+        <!-- Card with image only -->
+        <div class="image-overlay">
+          <img src="../../assets/shape.svg" alt="shape" class="big-image" />
+          <img
+            src="../../assets/HM_LOGO.svg"
+            alt="overlay-image"
+            class="overlay-image"
+          />
+        </div>
       </div>
     </div>
   </div>
 </div>
+
 <app-footer></app-footer>
