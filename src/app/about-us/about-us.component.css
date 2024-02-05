@@ -1,5 +1,7 @@
 .About {
   margin-top: 5%;
+  transform: translateY(0);
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
 }
 .underline {
   color: rgb(125, 151, 236);
