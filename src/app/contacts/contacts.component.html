@@ -3,7 +3,7 @@
   class="contact-section"
   [ngClass]="{ closed: isScrollingUp, open: isScrollingDown }"
 >
-  <div class="container">
+  <div class="container" [@fadeIn]="isAnimated ? 'visible' : 'hidden'">
     <div class="row">
       <div class="col-md-6">
         <h2 class="section-title">Contact</h2>
